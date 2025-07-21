@@ -23,14 +23,12 @@
 
 #include <CGALPlugin/MeshGenerationFromImage.h>
 #include <sofa/type/Quat.h>
+#include <CGAL/Image_3.h>
 
 using namespace sofa;
 
 #define SQR(X)   ((X)*(X))
 
-#if CGAL_VERSION_NR >= CGAL_VERSION_NUMBER(3,5,0)
-using namespace CGAL::parameters;
-#endif
 
 namespace cgal
 {
